@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh "pwd"
                 sh "rm -rf hello-world-war"
-                sh "git clone https://github.com/adith90/hello-world-war.git"
+                ##sh "git clone https://github.com/adith90/hello-world-war.git"
             }
         }
         stage('Build') {
