@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "sudo visudo"
+                sh "cp /home/slave2/workspace/helloworld/target/hello-world-war-1.0.0.war /opt/tomcat/webapps"
                
             }
         }
