@@ -9,9 +9,9 @@ pipeline {
                 sh "git clone https://github.com/adith90/hello-world-war.git"
             }
         }
-        stage('Test') {
+        stage('Build') {
             steps {
-                echo 'Testing..'
+                sh "ls"
             }
         }
         stage('Deploy') {
