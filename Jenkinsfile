@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "cp /home/slave2/workspace/helloworld/target/hello-world-war-1.0.0.war /opt/tomcat/webapps"
+                sh "cp /home/slave2/workspace/hello_project/target/hello-world-war-1.0.0.war /opt/tomcat/webapps"
                 sh "cd /opt/tomcat/bin"
                 sh "sh startup.sh"
                
